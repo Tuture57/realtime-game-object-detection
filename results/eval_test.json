@@ -1,0 +1,73 @@
+{
+  "weights": "yolov8s_brawl_v2.pt",
+  "split": "test",
+  "imgsz": 800,
+  "mAP50": 0.8926,
+  "mAP50-95": 0.701,
+  "precision": 0.8455,
+  "recall": 0.8431,
+  "per_class": {
+    "ally": {
+      "AP50": 0.995,
+      "AP50-95": 0.764,
+      "precision": 0.9469,
+      "recall": 1.0
+    },
+    "baril": {
+      "AP50": 0.945,
+      "AP50-95": 0.8505,
+      "precision": 1.0,
+      "recall": 0.6967
+    },
+    "buisson": {
+      "AP50": 0.5152,
+      "AP50-95": 0.3501,
+      "precision": 0.4844,
+      "recall": 0.4906
+    },
+    "crate": {
+      "AP50": 0.995,
+      "AP50-95": 0.8955,
+      "precision": 0.9563,
+      "recall": 1.0
+    },
+    "ennemi": {
+      "AP50": 0.8998,
+      "AP50-95": 0.5937,
+      "precision": 0.8968,
+      "recall": 0.9091
+    },
+    "gemme": {
+      "AP50": 0.9436,
+      "AP50-95": 0.5227,
+      "precision": 1.0,
+      "recall": 0.7605
+    },
+    "generateur": {
+      "AP50": 0.995,
+      "AP50-95": 0.8693,
+      "precision": 0.7583,
+      "recall": 1.0
+    },
+    "player": {
+      "AP50": 0.995,
+      "AP50-95": 0.8216,
+      "precision": 1.0,
+      "recall": 0.9811
+    },
+    "wall": {
+      "AP50": 0.7499,
+      "AP50-95": 0.642,
+      "precision": 0.5665,
+      "recall": 0.75
+    }
+  },
+  "speed_ms_per_image": {
+    "preprocess": 1.97,
+    "inference": 236.02,
+    "loss": 0.0,
+    "postprocess": 1.25
+  },
+  "device": "cpu",
+  "run_dir": "runs\\val\\yolov8s_brawl_v2_test_800"
+}

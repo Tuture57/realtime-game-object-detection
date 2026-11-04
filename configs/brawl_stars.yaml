@@ -1,0 +1,23 @@
+# Dataset configuration (YOLO format). `path` is relative to the repository root.
+# Source: Roboflow Universe, workspace "brawlll", project "brawl-stars-bot-16ycf", version 1 (CC BY 4.0).
+# 93 hand-annotated gameplay screenshots, 959 boxes, split 65 / 19 / 9 (train / valid / test).
+# Class names are the original (French) labels stored in the released model; English in comments.
+path: data/brawl-stars-v1
+train: train/images
+val: valid/images
+test: test/images
+names:
+  0: ally
+  1: baril          # barrel
+  2: battle         # UI element (1 example)
+  3: buisson        # bush
+  4: choosebrawler  # UI element: character selection (1 example)
+  5: crate
+  6: croix          # cross marker (1 example)
+  7: ennemi         # enemy
+  8: exit           # UI element (1 example)
+  9: gemme          # gem
+  10: generateur    # gem generator
+  11: player
+  12: victory       # UI element (1 example)
+  13: wall

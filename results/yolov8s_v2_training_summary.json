@@ -1,0 +1,26 @@
+{
+  "trained_on": "2024-06-07T11:17:02.563158",
+  "ultralytics_version": "8.0.196",
+  "train_args": {
+    "model": "yolov8s.pt",
+    "epochs": 50,
+    "imgsz": 800,
+    "batch": 16,
+    "optimizer": "auto",
+    "lr0": 0.01,
+    "pretrained": true,
+    "close_mosaic": 10,
+    "seed": 0
+  },
+  "best_epoch_metrics": {
+    "metrics/precision(B)": 0.8109,
+    "metrics/recall(B)": 0.8124,
+    "metrics/mAP50(B)": 0.8765,
+    "metrics/mAP50-95(B)": 0.6643,
+    "val/box_loss": 1.0404,
+    "val/cls_loss": 0.8899,
+    "val/dfl_loss": 1.0248,
+    "fitness": 0.6855
+  },
+  "epochs_in_log": 35
+}

@@ -1,0 +1,6 @@
+imgsz,split,mAP50,mAP50-95,latency_ms_mean,latency_ms_median,latency_ms_p90,fps_median,device,frames
+480,test,0.8539,0.6488,95.1,94.9,97.6,10.5,11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz,27
+640,test,0.8431,0.6621,140.3,140.3,142.7,7.1,11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz,27
+800,test,0.8926,0.701,214.3,212.0,218.2,4.7,11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz,27
+1024,test,0.9045,0.7033,305.8,303.7,310.6,3.3,11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz,27
+1280,test,0.8966,0.6866,472.0,470.2,479.3,2.1,11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz,27

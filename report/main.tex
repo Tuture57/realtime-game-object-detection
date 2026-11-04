@@ -7,8 +7,10 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{amsmath}
-\usepackage{url}
+\usepackage{xurl}
 \usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Real-Time Object Detection in Mobile-Game Footage from Fewer than 100 Annotated Images},
+            pdfauthor={Arthur Bartolomei}}
 \usepackage[font=small]{caption}
 \graphicspath{{figures/}}
 
@@ -57,7 +59,7 @@ $\pm25\%$ saturation; validation and test images are untouched.
 \centering\small
 \begin{tabular}{llr}
 \toprule
-Class & Meaning & Boxes (train/val/test)\\
+Class & Meaning & Boxes\\
 \midrule
 \texttt{buisson} & bush & 224 / 40 / 23\\
 \texttt{wall} & wall & 121 / 17 / 8\\
@@ -70,7 +72,7 @@ Class & Meaning & Boxes (train/val/test)\\
 \texttt{baril} & barrel & 19 / 2 / 4\\
 \bottomrule
 \end{tabular}
-\caption{In-game classes and number of boxes per split.}
+\caption{In-game classes and number of boxes per split (train / validation / test).}
 \label{tab:classes}
 \end{table}
 
@@ -111,15 +113,16 @@ so box boundaries are ambiguous even for the annotator.
 
 \begin{table}[t]
 \centering\small
-\begin{tabular}{lrrrr}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrr}
 \toprule
-Split & mAP@.5 & mAP@.5:.95 & P & R\\
+Split & Img. & mAP@.5 & mAP@.5:.95 & P & R\\
 \midrule
-Validation (19 img.) & 0.876 & 0.668 & 0.812 & 0.812\\
-Test (9 img.) & \textbf{0.893} & \textbf{0.701} & 0.846 & 0.843\\
+Val. & 19 & 0.876 & 0.668 & 0.812 & 0.812\\
+Test & 9 & \textbf{0.893} & \textbf{0.701} & 0.846 & 0.843\\
 \bottomrule
 \end{tabular}
-\caption{YOLOv8s at 800\,px. Validation was used for model selection.}
+\caption{YOLOv8s at 800\,px (P: precision, R: recall). Validation was used for model selection.}
 \label{tab:det}
 \end{table}
 

@@ -10,6 +10,8 @@ The repository also contains two small studies built on top of the detector:
 - **A second-stage crop classifier written in plain PyTorch**: given a correct box, how separable are the
   classes (player / ally / enemy, bush / wall)? This separates classification errors from localisation errors.
 
+**Technical report (3 pages, PDF): [`report/report.pdf`](report/report.pdf)**
+
 ![Detections on a test-split screenshot (YOLOv8s, 800 px, confidence > 0.5)](docs/example_prediction.jpg)
 
 > Scope: perception only. This repository contains no code that sends inputs to the game.
@@ -167,7 +169,7 @@ tools/
   plot_resolution_tradeoff.py   CPU vs GPU accuracy / latency figure
 notebooks/train_on_colab.ipynb  training on Google Colab
 results/                        metrics (JSON / CSV) and figures
-report/                         4-page technical report (LaTeX)
+report/                         3-page technical report (report.pdf + LaTeX source)
 ```
 
 `data/`, `weights/` and `runs/` are not versioned: the dataset lives on Roboflow Universe and the weights are
